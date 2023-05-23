@@ -1,13 +1,14 @@
 .wrapper {
     display: flex;
     justify-content: center;
+    width: 300px;
 }
 
-.wrapper .list-item {
+.listItem {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 8px;
     box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
     margin-bottom: 16px;
@@ -15,27 +16,28 @@
     background-color:lightgoldenrodyellow;
 }
 
-.wrapper .list-item .status {
+.status {
     width: 16px;
     height: 16px;
     border-radius: 50%;
     margin-right: 16px;
+    margin-left: 16px;
 }
 
-.wrapper .list-item .status.is-online {
+.isOnline {
     background-color: greenyellow;
 }
 
-.wrapper .list-item .status.is-offline {
+.isOffline {
     background-color: crimson;
 }
 
-.wrapper .list-item .avatar {
+.avatar {
     border-radius: 12px;
     margin-right: 16px;
     background-color: #fff;
 }
 
-.wrapper .list-item .name {
+.name {
     margin-right: 28px;
 }

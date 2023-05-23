@@ -4,22 +4,22 @@
     margin-bottom: 40px;
 }
 
-.transaction-history {
+.transactionHistory {
     -webkit-box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
     -moz-box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
     box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
 }
 
-.transaction-history .thead {
+.transactionHistory .thead {
     display: flex;
 }
 
-.transaction-history .titles {
+.transactionHistory .titles {
     display: flex;
     justify-content: space-around;
 }
 
-.transaction-history .titles .info {
+.transactionHistory .titles .info {
     width: 200px;
     border: 1px solid #b4babc;
     background-color: #00BDD5;
@@ -29,17 +29,17 @@
     font-size: 20px;
 }
 
-.transaction-history .tbody {
+.transactionHistory .tbody {
     display: flex;
     flex-direction: column;
 }
 
-.transaction-history .frame {
+.transactionHistory .frame {
     display: flex;
     justify-content: space-around;
 }
 
-.transaction-history .frame .frame-item {
+.transactionHistory .frame .frameItem {
     border-right: 1px solid #b4babc;
     width: 200px;
     text-align: center;
@@ -49,10 +49,10 @@
     color: slategrey;
 }
 
-.transaction-history .frame:nth-child(even) {
+.transactionHistory .frame:nth-child(even) {
     background-color: #ECF1F3;
 }
 
-.transaction-history .frame .frame-item:last-child {
+.transactionHistory .frame .frameItem:last-child {
     border-right: none;
 }

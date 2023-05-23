@@ -57,13 +57,13 @@
     padding-bottom: 8px;
 }
 
-.profile .stats-item {
+.profile .statsItem {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.profile .stats .stats-item .label {
+.profile .stats .statsItem .label {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
@@ -71,7 +71,7 @@
     margin: 6px 0;
 }
 
-.profile .stats .stats-item .quantity {
+.profile .stats .statsItem .quantity {
     font-size: 14px;
     line-height: 1;
     letter-spacing: -0.02em;

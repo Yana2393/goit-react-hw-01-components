@@ -1,23 +1,24 @@
 import React from 'react';
-import '../TransactionHistory/TransactionHistory.css';
+import PropTypes from "prop-types";
+import css from "TransactionHistory/TransactionHistory.module.css"
 
 function TransactionHistory({ items }) {
   return (
-    <div className="container">
-      <table className="transaction-history">
-        <thead className="thead">
-          <tr className="titles">
-            <th className="info">Type</th>
-            <th className="info">Amount</th>
-            <th className="info">Currency</th>
+    <div className={css.container}>
+      <table className={css.transactionHistory}>
+        <thead className={css.thead}>
+          <tr className={css.titles}>
+            <th className={css.info}>Type</th>
+            <th className={css.info}>Amount</th>
+            <th className={css.info}>Currency</th>
           </tr>
         </thead>
-        <tbody className="tbody">
+        <tbody className={css.tbody}>
           {items.map(item => (
-            <tr key={item.id} className="frame">
-              <td className="frame-item">{item.type}</td>
-              <td className="frame-item">{item.amount}</td>
-              <td className="frame-item">{item.currency}</td>
+            <tr key={item.id} className={css.frame}>
+              <td className={css.frameItem}>{item.type}</td>
+              <td className={css.frameItem}>{item.amount}</td>
+              <td className={css.frameItem}>{item.currency}</td>
             </tr>
           ))}
         </tbody>
@@ -27,3 +28,9 @@ function TransactionHistory({ items }) {
 }
 
 export default TransactionHistory;
+
+TransactionHistory.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.number,
+  currency: PropTypes.string,
+};
