@@ -7,7 +7,7 @@ export function Statistics({ title, stats }) {
   return (
     <section className={css.statistics}>
       <div className={css.wrap}>
-        <h2 className={css.title}>{title}</h2>
+        {title && <h2 className={css.title}>{title}</h2>}
 
         <ul className={css.statList}>
           {stats.map(stat => (
@@ -30,6 +30,12 @@ export function Statistics({ title, stats }) {
 
 
 Statistics.propTypes = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
