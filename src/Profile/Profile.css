@@ -1,0 +1,79 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.profile .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgrey;
+    padding-top: 8px;
+}
+
+.profile .description .name {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 8px 0;
+}
+
+.profile .description .location {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: lightgray;
+    margin: 6px 0;
+}
+
+.profile .description .tag {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: lightgray;
+    margin: 6px 0;
+}
+
+.profile .avatar {
+    border-radius: 50%;
+    width: 50%;
+    background-color: white;
+}
+
+.profile .stats {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 0;
+    background-color: lightgray;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.profile .stats-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile .stats .stats-item .label {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 6px 0;
+}
+
+.profile .stats .stats-item .quantity {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 6px 0;
+}

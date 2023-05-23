@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.transaction-history {
+    -webkit-box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
+    box-shadow: 18px 17px 23px -18px rgba(0, 0, 0, 0.82);
+}
+
+.transaction-history .thead {
+    display: flex;
+}
+
+.transaction-history .titles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transaction-history .titles .info {
+    width: 200px;
+    border: 1px solid #b4babc;
+    background-color: #00BDD5;
+    color: white;
+    text-transform: uppercase;
+    padding: 16px;
+    font-size: 20px;
+}
+
+.transaction-history .tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-history .frame {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transaction-history .frame .frame-item {
+    border-right: 1px solid #b4babc;
+    width: 200px;
+    text-align: center;
+    padding: 16px;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: slategrey;
+}
+
+.transaction-history .frame:nth-child(even) {
+    background-color: #ECF1F3;
+}
+
+.transaction-history .frame .frame-item:last-child {
+    border-right: none;
+}
